@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/colorClick_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_light_white">
+
+    <LinearLayout
+        android:id="@+id/colorClick_container"
+        android:layout_centerInParent="true"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/colorClick_instruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/colorClick_instruction"
+            android:textSize="24sp"
+            android:textColor="@color/material_light_black"/>
+
+        <Button
+            android:id="@+id/colorClick_startButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/colorClick_startTest"
+            android:textColor="@color/material_light_black"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/colorClick_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:textSize="36sp"
+        android:textColor="@color/material_light_white"
+        tools:text="1.999"
+        android:layout_marginLeft="16dp" />
+
+
+    <TextView
+        android:id="@+id/colorClick_notification"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@color/material_light_black" />
+
+</RelativeLayout>

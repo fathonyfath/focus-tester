@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Focus Tester</string>
+
+    <string name="colorClick_instruction">Tap the screen as fast as possible after the screen color changes. This test intended to check how fast you can react through color changes.</string>
+    <string name="colorClick_startTest">Start the Test</string>
+    <string name="colorClick_gameNotStarting">Game is not even starting, yet.</string>
+    <string name="colorClick_win">You\'re focused enough! Go! Do your job now!</string>
+    <string name="colorClick_lose">You\'re not focused enough! Probably a shot of coffee would help.</string>
+</resources>
