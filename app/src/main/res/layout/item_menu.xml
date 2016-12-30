@@ -3,16 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/menu_container"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="48dp"
     android:background="@color/material_light_white"
     android:clickable="true"
     android:foreground="?selectableItemBackground"
     android:padding="8dp">
-
-    <ImageView
-        android:id="@+id/menu_icon"
-        android:layout_width="48dp"
-        android:layout_height="48dp" />
 
     <TextView
         android:id="@+id/menu_text"
@@ -20,7 +15,6 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginLeft="16dp"
-        android:layout_toRightOf="@id/menu_icon"
         android:maxLines="1"
         android:textColor="@color/material_light_black"
         android:textSize="18sp"

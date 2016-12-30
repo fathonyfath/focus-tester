@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.ListView;
 
 import com.papbg.focustester.R;
+import com.papbg.focustester.fiturChangingImage.ChangingImageFragment;
 import com.papbg.focustester.fiturColorClick.ColorClickFragment;
+import com.papbg.focustester.fiturFollowMe.FollowMeFragment;
 import com.papbg.focustester.utils.BaseFragment;
 
 import java.util.ArrayList;
@@ -48,14 +50,15 @@ public class MenuFragment extends BaseFragment {
         menuList.setAdapter(listViewAdapter);
 
         List<MenuItem> menuItemList = new ArrayList<>();
-        menuItemList.add(new MenuItem(R.mipmap.ic_launcher, "Menu 1"));
-        menuItemList.add(new MenuItem(R.mipmap.ic_launcher, "Menu 2"));
-        menuItemList.add(new MenuItem(R.mipmap.ic_launcher, "Menu 3"));
-        menuItemList.add(new MenuItem(R.mipmap.ic_launcher, "About"));
-        menuItemList.add(new MenuItem(R.mipmap.ic_launcher, "Exit"));
+        menuItemList.add(new MenuItem("Color Clicker"));
+        menuItemList.add(new MenuItem("Changing Image"));
+        menuItemList.add(new MenuItem("Follow Me"));
+        menuItemList.add(new MenuItem("Exit"));
 
         listViewAdapter.setItems(menuItemList);
         listViewAdapter.notifyDataSetChanged();
+
+        toolbar.setTitle("Focus Tester");
 
         listViewAdapter.setViewEventListener(new ViewEventListener() {
             @Override
@@ -64,6 +67,15 @@ public class MenuFragment extends BaseFragment {
                     switch (position) {
                         case 0:
                             getParentActivity().replaceFragment(new ColorClickFragment(), true);
+                            break;
+                        case 1:
+                            getParentActivity().replaceFragment(new ChangingImageFragment(), true);
+                            break;
+                        case 2:
+                            getParentActivity().replaceFragment(new FollowMeFragment(), true);
+                            break;
+                        case 3:
+                            getParentActivity().finish();
                             break;
                         default:
                             break;

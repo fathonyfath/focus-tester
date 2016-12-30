@@ -8,21 +8,10 @@ import android.support.annotation.DrawableRes;
 
 public class MenuItem {
 
-    @DrawableRes private int iconId;
     private String menu;
 
-    public MenuItem(@DrawableRes int iconId, String menu) {
-        this.iconId = iconId;
+    public MenuItem(String menu) {
         this.menu = menu;
-    }
-
-    @DrawableRes
-    public int getIconId() {
-        return iconId;
-    }
-
-    public void setIconId(@DrawableRes int iconId) {
-        this.iconId = iconId;
     }
 
     public String getMenu() {

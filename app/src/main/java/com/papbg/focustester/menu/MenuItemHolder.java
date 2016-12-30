@@ -24,9 +24,6 @@ public class MenuItemHolder extends BindableFrameLayout<MenuItem> {
     @BindView(R.id.menu_container)
     RelativeLayout container;
 
-    @BindView(R.id.menu_icon)
-    ImageView iconImage;
-
     @BindView(R.id.menu_text)
     TextView textView;
 
@@ -48,7 +45,6 @@ public class MenuItemHolder extends BindableFrameLayout<MenuItem> {
 
     @Override
     public void bind(MenuItem menuItem) {
-        iconImage.setImageResource(menuItem.getIconId());
         textView.setText(menuItem.getMenu());
 
         container.setOnClickListener(new OnClickListener() {
